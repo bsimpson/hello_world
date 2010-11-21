@@ -1,0 +1,11 @@
+%w(rubygems rake echoe).each {|x| require x}
+
+
+Echoe.new('helloworld', '0.0.1') do |p|
+  p.description    = "A gem that illustrates how to build a gem"
+  p.url            = "http://github.com/bsimpson/hello_world"
+  p.author         = "Ben Simpson"
+  p.email          = "thehoagie@gmail.com"
+  p.ignore_pattern = ["tmp/*", "script/*"]
+  p.development_dependencies = []
+end
